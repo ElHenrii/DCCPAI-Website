@@ -1,0 +1,161 @@
+.panelContainer {
+    border-radius: 2rem;
+    height: auto;
+    width: 60vw;
+    padding: 5rem ;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--dark-green-color); /* placeholder */
+}
+
+.topRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.xButton {
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+}
+
+.imagePreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); 
+    background-color: white;
+    color: var(--dark-green-color); /* placeholder */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--button-text-size);
+    font-weight: bold;
+}
+
+.panelInputDiv {
+    text-align: center;
+    /* margin: 0 0 0 8rem 0; */
+}
+
+.panelInputDiv h1{
+    font-size: 8rem;
+    /* margin: 0 0 1.5rem 0; */
+}
+
+.panelInput {
+    width: 40vw;
+    border: 1px solid var(--dark-green-color); /* placeholder */
+    box-shadow: 3px 3px 0 0 var(--dark-green-color); /* placeholder */
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.productCardPanelGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    grid-template-rows: repeat(2, auto);
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.leftSideBottom h1 {
+    font-size: var(--button-text-size);
+    
+}
+
+.bottomButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    column-gap: 10rem;
+}
+
+/* Hover States: */
+
+.xButton, .xButton button {
+    transition: background-color 0.3s ease-in-out, 
+                color            0.3s ease-in-out;
+  }
+  
+.xButton:hover {
+      cursor: pointer;
+      color: white; /* placeholder */
+      background-color: var(--dark-green-color);
+}
+
+.panelInput:focus {
+    outline: none;
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}

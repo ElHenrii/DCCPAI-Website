@@ -1,0 +1,19 @@
+.aboutBodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30vw;
+    min-height: 100vh;
+    margin-bottom: 8rem;
+}
+
+.leftText, .rightText {
+    margin: 5rem 0;
+}
+
+.leftText {
+    align-self: flex-start; /* Optional, if you want to ensure left alignment */
+}
+
+.rightText {
+    align-self: flex-end; /* This aligns the element to the right side of the container */
+}

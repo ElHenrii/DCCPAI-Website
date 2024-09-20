@@ -1,0 +1,16 @@
+.aboutTitleContainer {
+    margin-top: 10rem;
+    padding: 10rem 0;
+}
+
+.aboutTitleContainer h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0;
+}
+
+.aboutTitleContainer h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
