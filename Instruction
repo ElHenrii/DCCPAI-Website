@@ -1,0 +1,6 @@
+Upload the SQL to the xampp
+Place the Phpfiles to the c:/xampp/htdocs
+
+When running the website
+First do cd DCCPAI and after that do "Node server.js"
+And the last is to run the front end npm run dev
